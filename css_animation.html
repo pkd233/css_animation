@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> CSS Animation | Spring 2016 </title>
+    <style type="text/css">
+        h1{
+          color: white;
+          font-family: "Courier New", Courier, monospace;
+          font-weight: normal;
+        }
+
+
+        .container {
+            width: 600px;
+            height: 600px;
+            margin: auto;
+            perspective: 800px;
+            perspective-origin: 50% 50%;
+            transform-style: preserve-3d;
+          }
+
+
+        #square1 {
+          height: 100px;
+  				width: 100px;
+  				background-color:rgb(25,170,227);
+  				opacity: .5;
+  				position:absolute;
+  				border-style: solid;
+  				border-color: white;
+  				z-index:10;
+  				margin-left:0px;
+  				margin-top:450px;
+
+  				animation-name: square1;
+  				animation-duration: 4s;
+  				animation-iteration-count: infinite;
+        }
+
+        @keyframes square1 {
+          0% {transform: translate(-100px, 0px);}
+          25% {transform: translateX(450px);}
+          50% {transform: translateY(-450px);}
+          75% {transform: translateY(450px);}
+          100% {transform: translateX(-450px);}
+        }
+
+        #square2 {
+          height: 150px;
+  				width: 150px;
+  				background-color:rgb(17,17,225);
+  				opacity: .7;
+  				position:absolute;
+  				border-style: solid;
+  				border-color: white;
+  				z-index:9;
+  				margin-left:0px;
+  				margin-top:0px;
+
+  				animation-name: square2;
+  				animation-duration: 4s;
+  				animation-iteration-count: infinite;
+        }
+
+        @keyframes square2 {
+          0% {transform: translate(-200px, 0px);}
+          25% {transform: translateX(450px);}
+          50% {transform: translateY(450px);}
+          75% {transform: translateY(450px);}
+          100% {transform: translateX(-450px);}
+        }
+
+        #square3 {
+          height: 200px;
+  				width: 200px;
+  				background-color:rgb(143,143,227);
+  				opacity: .7;
+  				position:absolute;
+  				border-style: solid;
+  				border-color: white;
+  				z-index:8;
+  				margin-left:500px;
+  				margin-top:0px;
+
+  				animation-name: square3;
+  				animation-duration: 4s;
+  				animation-iteration-count: infinite;
+        }
+
+        @keyframes square3 {
+          0% {transform: translate(0px, -200px);}
+          25% {transform: translateX(450px);}
+          50% {transform: translateY(450px);}
+          75% {transform: translateY(450px);}
+          100% {transform: translateX(500px);}
+        }
+
+        #square4 {
+          height: 150px;
+          width: 150px;
+          background-color:rgb(166,111,222);
+          opacity: .6;
+          position:absolute;
+          border-style: solid;
+          border-color: white;
+          z-index:7;
+          margin-left:500px;
+          margin-top:450px;
+
+          animation-name: square4;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+            }
+
+            @keyframes square4 {
+              0% {transform: translate(-100px, 0px);}
+              25% {transform: translateX(450px);}
+              50% {transform: translateY(-450px);}
+              75% {transform: translateY(450px);}
+              100% {transform: translateX(-450px);}
+            }
+
+        #square5 {
+          height: 100px;
+  				width: 100px;
+  				background-color:rgb(25,170,227);
+  				opacity: .5;
+  				position:absolute;
+  				border-style: solid;
+  				border-color: white;
+  				z-index:2;
+  				margin-left:250px;
+  				margin-top:250px;
+
+  				animation-name: square5;
+  				animation-duration: 4s;
+  				animation-iteration-count: infinite;
+        }
+
+        @keyframes square5 {
+				      from {transform: rotateY(0deg);}
+				      to {transform: rotateY(360deg);}
+            }
+
+
+        #square6 {
+          height: 100px;
+  				width: 100px;
+  				background-color:rgb(17,17,225);
+  				opacity: .5;
+  				position:absolute;
+  				border-style: solid;
+  				border-color: white;
+  				z-index:3;
+  				margin-left:275px;
+  				margin-top:350px;
+
+  				animation-name: square6;
+  				animation-duration: 4s;
+  				animation-iteration-count: infinite;
+        }
+
+        @keyframes square6 {
+				      from {transform: rotateY(0deg);}
+				      to {transform: rotateY(360deg);}
+            }
+
+        #square7 {
+          height: 100px;
+          width: 100px;
+          background-color:rgb(143,143,227);
+          opacity: .7;
+          position:absolute;
+          border-style: solid;
+          border-color: white;
+          z-index:4;
+          margin-left:350px;
+          margin-top:300px;
+
+          animation-name: square7;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes square7 {
+				      from {transform: rotateY(0deg);}
+				      to {transform: rotateY(360deg);}
+            }
+
+
+        #square8 {
+          height: 100px;
+          width: 100px;
+          background-color:rgb(166,111,222);
+          opacity: .7;
+          position:absolute;
+          border-style: solid;
+          border-color: white;
+          z-index:5;
+          margin-left:375px;
+          margin-top: 375px;
+
+          animation-name: square7;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes square8 {
+				      from {transform: rotateY(0deg);}
+				      to {transform: rotateY(360deg);}
+            }
+
+        #square1:hover, #square2:hover, #square3:hover, #square4:hover, #square5:hover, #square6:hover, #square7:hover, #square8:hover {
+          animation-play-state: paused;
+        }
+
+        .container:active {
+        				transform: rotateZ(90deg);
+              }
+
+
+    </style>
+  </head>
+
+  <body background="Blue_Clouds.jpg">
+    <h1> CSS Animation | Color in the Clouds </h1>
+
+    <div class="container">
+      <div id="square1"></div>
+      <div id="square2"></div>
+      <div id="square3"></div>
+      <div id="square4"></div>
+      <div id="square5"></div>
+      <div id="square6"></div>
+      <div id="square7"></div>
+      <div id="square8"></div>
+    </div>
+  </body>
+</html>
